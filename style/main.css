@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+:root{
+    --vermelho: #E50914;
+    --preto: #141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Elementos Base */
+
+body {
+    background: var(--preto);
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    color: var(--vermelho);
+    font-family: 'Bebas Neue', cursive;
+    font-size: 50px;
+    font-weight: bolder;
+    margin-left: 5px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 10px;
+}
+
+header nav a:hover {
+    color: #fff;
+}
+
+/* Conteudo Principal */
+
+.conteudo-principal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)100%), url('/img/fundo_breakingbad.jpg');
+    
+    height: 500px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.conteudo-principal .sinopse {
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+
+.conteudo-principal .titulo {
+    margin-top: 15%;
+    font-size: 60px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.botao {
+    background-color: rgba(0,0,0,.5);
+    border: none;
+    border-radius: 5px;
+    color: white;
+
+    padding: 10px 20px;
+    margin-right: 10px;
+    font-size: 14px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover {
+    background-color: white;
+    color: black;
+}
+
+.botao i {
+    margin-right: 8px;
+}
+
+.container {
+    margin-left: 20px;
+}
+
+.conteudo-principal .container {
+    width: 70%;
+}
+
+.carrossel-filmes .titulo {
+    margin: 8px 0px 5px 10px;
+    font: 'Bebas Neue' 20px bold;
+}
+
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrossel-filmes {
+    margin-top: 5px;
+}
